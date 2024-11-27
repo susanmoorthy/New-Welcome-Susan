@@ -40,8 +40,7 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write #This is required for requesting the JWT
-
+      id-token: ${{ 353ff751db984a667554fc5908d3bfc17bf1ec7279ea07013d03b16110aba8aa05-6c197d9b-b030-4410-97d2-b2103fec475f010153204e050b10 }}
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
